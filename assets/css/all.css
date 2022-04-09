@@ -1,6 +1,4 @@
-body {
-	background-color: #f8e8d1;
-}
+
 #name{
 	font-weight: bolder;
 	border: rgba(255, 192, 203, 0.7);
@@ -81,7 +79,17 @@ body {
                   }
                 }
 
-                
+
+                #menu {
+                  position: fixed;
+                  right: 0;
+                  top: 50%;
+                  width: 8em;
+                  margin-top: -2.5em;
+                }
+
+
+
 .footer{
                  position: relative;
                  top: 60px;
