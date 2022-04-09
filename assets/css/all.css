@@ -64,7 +64,26 @@ body {
                      height: 1.4em; 
                     line-height: 1.4em;   
                     background-image: linear-gradient(to right, rgb(234, 149, 232) , rgb(251, 219, 38));  
-                    border-radius:999em;                                
+                    border-radius:999em; 
+                     animation: progressAnimationStrike 6s;                               
                }
-                 .graph .bar span { position: absolute; left: 1em; }
+   .graph .bar span {
+                  position: absolute;
+                  left: 1em;
+                  transform: 0.4s linear;
+                  transition-property:width, background-color;}
+   @keyframes progressAnimationStrike {
+                  from {
+                    width: 0;
+                  }
+                  to {
+                    
+                  }
+                }
 
+                
+.footer{
+                 position: relative;
+                 top: 60px;
+                 width: 450px;
+                }
