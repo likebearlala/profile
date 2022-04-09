@@ -1,0 +1,70 @@
+body {
+	background-color: #f8e8d1;
+}
+#name{
+	font-weight: bolder;
+	border: rgba(255, 192, 203, 0.7);
+	text-shadow: 6px 6px 5px rgba(192,192,192,0.6);
+	font-size: 30px;
+}
+ /* 座右銘閃爍動畫 */
+#sentence{
+	animation: blink 1s infinite;
+	font-weight: bold;
+	color: gray;
+	border: rgba(255, 192, 203, 0.7);
+	text-shadow: 6px 6px 5px rgba(192,192,192,0.6);
+	font-size: 24px;
+}
+@keyframes blink{
+ 0% {opacity: 0}
+ 50% {opacity: 1}
+ 100% {opacity: 0}
+ } 
+ /* 圖片變大 */
+ .bigger img:hover{
+	  transform:scale(1.2,1.2);
+  }
+  .bigger{
+	  overflow: hidden;
+  }
+  /* 圖片的拍立得效果 */
+  p span img{
+	padding: 10px;
+	background-color:#fff;
+	border: 1px solid #000;
+  }
+  a img:hover{
+	transform:scale(1.2,1.2);
+	overflow: hidden;
+  }
+  a img{
+	height:50px;
+	width:50px;
+  }
+  #circle{
+    border-radius:50%;
+  }
+
+ /* 長條圖 */
+ .graph { 
+                    position: relative; 
+                     width: 500px; 
+                     border: 1px solid #b8bb9a; 
+                    padding: 2px; 
+                     margin-bottom: .5em;     
+                     border-radius:999em;               
+                }
+  .graph .bar { 
+                    display: block;    
+                    position: relative;
+                    /* background: #B1D632;  */
+                   text-align: center; 
+                    color: #333; 
+                     height: 1.4em; 
+                    line-height: 1.4em;   
+                    background-image: linear-gradient(to right, rgb(234, 149, 232) , rgb(251, 219, 38));  
+                    border-radius:999em;                                
+               }
+                 .graph .bar span { position: absolute; left: 1em; }
+
