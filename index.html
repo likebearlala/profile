@@ -5,10 +5,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/all.css">
+	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/photo.css">
 	<title>履歷-廖庭萱</title>
 <style>
 	body {
 	background-color: #f8e8d1;
+	margin: 0px;
+		/* display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; */
+        /* background-color: #222; */
 }
 </style>
 
@@ -17,26 +25,36 @@
 </head>
 
 <body>
-	<header>Resume
+
+	<header><h1 class="spotlight" data-spotlight="Resume">Resume</h1>
 	</header>
 	<ul id="menu">
-		<li><a href="#a">專業技能</a></li>
-		<li><a href="#b">經歷</a></li>
-		<li><a href="#c">聯絡資訊</a></li>
+		<li><a href="#a">Skill</a></li>
+		<li><a href="#b">Experience</a></li>
+		<li><a href="#c">My Life</a></li>
+		<li><a href="#d">Contact me</a></li>
 	</ul>
 
 	<p>
-		<span class="bigger">
+		<blockquote>
 			<img src="images/me.jpg" id="circle" width="221px" height="262px">
-		</span>
+		</blockquote>
 	</p>
-	<p id="name">廖庭萱</p>
-<div id="sentence"  class="bigger">——「求知若飢，虛心若愚。」<i class="icon-emo-grin"></i></div>
+	<p id="name">廖庭萱	▕	  Lala Liao</p>
+	2001.11.18	—	
+	From Tainan
+	<br>
+	興趣:音樂、吃美食、聽團
+	<br>
+	飲料不喝無糖，討厭鹹的芋頭，喜歡蔥薑蒜
+<div id="sentence"  class="bigger">	          ——「求知若飢，虛心若愚。」<i class="icon-emo-grin"></i></div>
 
 
 <!-- 長條圖 -->
 <blockquote>
-	<h2 id="a">Skill</h2>
+	<div>
+	<h1 id="a" class="spotlight" data-spotlight="Skill">Skill</h1>
+	</div>
 					Java
                     <div class="graph">
                         	<strong class="bar" style="width: 80%;"><span>80%</span></strong>
@@ -69,11 +87,11 @@
 				
 </blockquote>	
 					 
-<h2 id="b">Experience</h2>
+<h1 id="b" class="spotlight" data-spotlight="Experience">Experience</h1>
 <h2>社團經歷</h2>
 
 <p>
-	<span class="bigger" id="photoer">
+	<span class="bigger" id="kmsh">
 		<img src="images/KMSH.jpg"  width="25%" height="25%">高中加入校內樂隊擔任次中音薩克斯風首席，和樂隊一起出沒在校內表演舞台和升旗典禮。
 	</span>
 </p>
@@ -97,8 +115,10 @@
 </p>
 
 <p>
-	<span class="bigger" id="wix">
-		<img src="images/wix-1.png"  width="25%" height="25%">企業概論與三峽禾乃川合作販賣營養餅，自架wix網站及自剪宣傳影片協助宣傳販賣。
+	<span class="bigger">
+		<img src="images/wix-1.png"   id="wix1" width="25%" height="25%">
+		<!-- <img src="images/wix-2.png"  id="wix2" width="25%" height="25%"> -->
+		企業概論與三峽禾乃川合作販賣營養餅，自架wix網站及自剪宣傳影片協助宣傳販賣。 
 	</span>
 </p>
 <h2>專案</h2>
@@ -108,8 +128,14 @@
 	</span>
 </p>
 
+<h1 id="c" class="spotlight" data-spotlight="My Life">My Life</h1>
+
+
+
+
+
 <footer>
-	<font id="c">Tel:0988609180</font>		Email:lalabear202020@gmail.com
+	<font id="d">Tel:0988609180</font>		Email:lalabear202020@gmail.com
 	<div class="footer">
 
 		Copyright © 2022 廖庭萱 版權所有

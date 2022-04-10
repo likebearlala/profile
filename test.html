@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  #menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin: -2.5em 0 0 0;
+    z-index: 5;
+    background: hsla(80, 90%, 40%, 0.7);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    text-align: left;
+    border: solid hsla(80, 90%, 40%, 0.5);
+    border-right: none;
+    padding: 0.5em 0.5em 0.5em 2.5em;
+    box-shadow: 0 1px 3px black;
+    border-radius: 3em 0.5em 0.5em 3em;
+  }
+  #menu li { margin: 0 }
+  #menu a { color: inherit }
+
+  /* Make menu absolute, not fixed, on IE 5 & 6 */
+  #menu { position: absolute }
+  *>#menu { position: fixed }
+
+  p.stb { text-indent: 0; margin-top: 0.83em }
+  p.mtb { text-indent: 0; margin-top: 2.17em }
+  p.ltb { text-indent: 0; margin-top: 3.08em }
+    </style>
+    
+</head>
+<body>
+    <div style="position:absolute;top:10px;left:10px;"></div>
+    <div style="position:absolute;top:30px;left:30px;"></div>
+    what
+    <ul>
+        <li><a href="#L384">一個固定住的功能表</a>
+    
+        <li><a href="#details">更多細節</a>
+    
+        <li><a href="#FAQ">常見問題: 在Windows上的 IE 5 &amp; 6 </a>
+       </ul>
+       </div>
+      
+      <ul id=menu>
+       <li><a href="#L384">Section 1</a>
+    
+       <li><a href="#details">Section 2</a>
+    
+       <li><a href="#FAQ">Section 3</a>
+      </ul>
+</body>
+</html>

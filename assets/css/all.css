@@ -5,44 +5,8 @@
 	text-shadow: 6px 6px 5px rgba(192,192,192,0.6);
 	font-size: 30px;
 }
- /* 座右銘閃爍動畫 */
-#sentence{
-	animation: blink 1s infinite;
-	font-weight: bold;
-	color: gray;
-	border: rgba(255, 192, 203, 0.7);
-	text-shadow: 6px 6px 5px rgba(192,192,192,0.6);
-	font-size: 24px;
-}
-@keyframes blink{
- 0% {opacity: 0}
- 50% {opacity: 1}
- 100% {opacity: 0}
- } 
- /* 圖片變大 */
- .bigger img:hover{
-	  transform:scale(1.2,1.2);
-  }
-  .bigger{
-	  overflow: hidden;
-  }
-  /* 圖片的拍立得效果 */
-  p span img{
-	padding: 10px;
-	background-color:#fff;
-	border: 1px solid #000;
-  }
-  a img:hover{
-	transform:scale(1.2,1.2);
-	overflow: hidden;
-  }
-  a img{
-	height:50px;
-	width:50px;
-  }
-  #circle{
-    border-radius:50%;
-  }
+
+ 
 
  /* 長條圖 */
  .graph { 
@@ -79,19 +43,43 @@
                   }
                 }
 
+  
 
-                #menu {
-                  position: fixed;
-                  right: 0;
-                  top: 50%;
-                  width: 8em;
-                  margin-top: -2.5em;
-                }
 
+
+            #menu {
+              position: fixed;
+              right: 0;
+              top: 50%;
+              width: 8em;
+              margin-top: -2.5em;
+            }
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              width: 200px;
+              background-color: #f1f1f1;
+              
+            }
+            
+            li a {
+              /* display: block;
+              width:  9em;
+              background-color: #dddddd; */
+              display: block;
+              color: #000;
+              padding: 8px 16px;
+              text-decoration: none;
+            }
+            li a:hover {
+              background-color: #555;
+              color: white;
+            }
 
 
 .footer{
-                 position: relative;
-                 top: 60px;
-                 width: 450px;
-                }
+            position: relative;
+            top: 60px;
+            width: 450px;
+}

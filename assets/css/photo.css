@@ -1,0 +1,45 @@
+/* 圖片變大 */
+.bigger img:hover{
+    transform:scale(1.2,1.2);
+}
+.bigger{
+    overflow: hidden;
+}
+/* 圖片的拍立得效果 */
+p span img{
+  padding: 10px;
+  background-color:#fff;
+  border: 1px solid #000;
+}
+a img:hover{
+  transform:scale(1.2,1.2);
+  overflow: hidden;
+}
+a img{
+  height:50px;
+  width:50px;
+}
+#circle{
+  border-radius:50%;
+}
+
+/* 雙重照片覆蓋 */
+
+/* .wix1{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+.wix2{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 0;
+}
+.wix3{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 0;
+} */
