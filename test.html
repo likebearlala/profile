@@ -6,56 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-  #menu {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    width: 8em;
-    margin: -2.5em 0 0 0;
-    z-index: 5;
-    background: hsla(80, 90%, 40%, 0.7);
-    color: white;
-    font-weight: bold;
-    font-size: large;
-    text-align: left;
-    border: solid hsla(80, 90%, 40%, 0.5);
-    border-right: none;
-    padding: 0.5em 0.5em 0.5em 2.5em;
-    box-shadow: 0 1px 3px black;
-    border-radius: 3em 0.5em 0.5em 3em;
+#canvas{
+  display: block;
+  margin: 0 auto;
+}
+  </style>
+  </head>
+  <body>
+
+<canvas id="canvas" width="300" height="300">
+  <p>抱歉，您的浏览器不支持canvas</p>
+</canvas>
+
+
+<script>var canvas = document.getElementById("canvas"),
+  ctx = canvas.getContext("2d"),
+  percent = 85.0, // 最终百分比
+  circleX = canvas.width / 2, // 中心x坐标
+  circleY = canvas.height / 2, // 中心y坐标
+  radius = 100, // 圆环半径
+  lineWidth = 20, // 圆形线条的宽度
+  fontSize = 50; // 字体大小
+
+// 画圆
+function circle(cx, cy, r) {
+  ctx.beginPath();
+  ctx.moveTo(cx + r, cy);
+  ctx.lineWidth = lineWidth;
+  ctx.strokeStyle = '#eee';
+  ctx.arc(cx, cy, r, 0, Math.PI * 2);
+  ctx.closePath();
+  ctx.stroke();
+}
+
+// 画弧线
+function sector(cx, cy, r, startAngle, endAngle, anti) {
+  ctx.beginPath();
+  ctx.moveTo(cx, cy + r); // 从圆形底部开始画
+  ctx.lineWidth = lineWidth;
+
+  // 渐变色 - 可自定义
+  var linGrad = ctx.createLinearGradient(
+      circleX, circleY - radius - lineWidth, circleX, circleY + radius + lineWidth
+  );
+  linGrad.addColorStop(0.0, '#ec847a');
+  linGrad.addColorStop(0.5, '#9bc4eb');
+  linGrad.addColorStop(1.0, '#eccd23');
+  ctx.strokeStyle = linGrad;
+
+  // 圆弧两端的样式
+  ctx.lineCap = 'round';
+
+  // 圆弧
+  ctx.arc(
+      cx, cy, r,
+      startAngle * (Math.PI / 180.0) + (Math.PI / 2),
+      endAngle * (Math.PI / 180.0) + (Math.PI / 2),
+      anti
+  );
+  ctx.stroke();
+}
+
+// 刷新
+function loading() {
+  if (process >= percent) {
+      clearInterval(circleLoading);
   }
-  #menu li { margin: 0 }
-  #menu a { color: inherit }
 
-  /* Make menu absolute, not fixed, on IE 5 & 6 */
-  #menu { position: absolute }
-  *>#menu { position: fixed }
+  // 清除canvas内容
+  ctx.clearRect(0, 0, circleX * 2, circleY * 2);
 
-  p.stb { text-indent: 0; margin-top: 0.83em }
-  p.mtb { text-indent: 0; margin-top: 2.17em }
-  p.ltb { text-indent: 0; margin-top: 3.08em }
-    </style>
-    
-</head>
-<body>
-    <div style="position:absolute;top:10px;left:10px;"></div>
-    <div style="position:absolute;top:30px;left:30px;"></div>
-    what
-    <ul>
-        <li><a href="#L384">一個固定住的功能表</a>
-    
-        <li><a href="#details">更多細節</a>
-    
-        <li><a href="#FAQ">常見問題: 在Windows上的 IE 5 &amp; 6 </a>
-       </ul>
-       </div>
-      
-      <ul id=menu>
-       <li><a href="#L384">Section 1</a>
-    
-       <li><a href="#details">Section 2</a>
-    
-       <li><a href="#FAQ">Section 3</a>
-      </ul>
+  // 中间的字
+  ctx.font = fontSize + 'px April';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillStyle = '#999';
+  ctx.fillText(parseFloat(process).toFixed(0) + '%', circleX, circleY);
+
+  // 圆形
+  circle(circleX, circleY, radius);
+
+  // 圆弧
+  sector(circleX, circleY, radius, 0, process / 100 * 360);
+
+  // 控制结束时动画的速度
+  if (process / percent > 0.90) {
+      process += 0.30;
+  } else if (process / percent > 0.80) {
+      process += 0.55;
+  } else if (process / percent > 0.70) {
+      process += 0.75;
+  } else {
+      process += 1.0;
+  }
+}
+
+var process = 0.0; // 进度
+var circleLoading = window.setInterval(function () {
+  loading();
+}, 20);</script>
+
 </body>
 </html>

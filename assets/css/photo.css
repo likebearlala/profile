@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 /* 圖片的拍立得效果 */
-p span img{
+.bigger img{
   padding: 10px;
   background-color:#fff;
   border: 1px solid #000;
@@ -22,7 +22,11 @@ a img{
 #circle{
   border-radius:50%;
 }
-
+#animals{
+  padding: 10px;
+  background-color:#fff;
+  border: 1px solid #000;
+}
 /* 雙重照片覆蓋 */
 
 /* .wix1{

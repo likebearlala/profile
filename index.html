@@ -10,8 +10,10 @@
 	<title>履歷-廖庭萱</title>
 <style>
 	body {
-	background-color: #f8e8d1;
-	margin: 0px;
+	cursor: url(images/cool.cur),auto;
+	background-color: #f7f1f0;
+	margin: 2%;
+	font-family: Arial, Helvetica, sans-serif;
 		/* display: flex;
         justify-content: center;
         align-items: center;
@@ -19,43 +21,50 @@
         /* background-color: #222; */
 }
 </style>
-
-
-
 </head>
-
 <body>
 
-	<header><h1 class="spotlight" data-spotlight="Resume">Resume</h1>
-	</header>
+	<!-- <header>
+		<h1 class="spotlight" data-spotlight="Resume">Resume</h1>
+	</header> -->
 	<ul id="menu">
-		<li><a href="#a">Skill</a></li>
-		<li><a href="#b">Experience</a></li>
-		<li><a href="#c">My Life</a></li>
-		<li><a href="#d">Contact me</a></li>
+		<li><a href="#a">Me</a></li>
+		<li><a href="#b">Skill</a></li>
+		<li><a href="#c">Experience</a></li>
+		<li><a href="#d">Contact</a></li>
 	</ul>
 
-	<p>
-		<blockquote>
-			<img src="images/me.jpg" id="circle" width="221px" height="262px">
-		</blockquote>
-	</p>
-	<p id="name">廖庭萱	▕	  Lala Liao</p>
-	2001.11.18	—	
-	From Tainan
-	<br>
-	興趣:音樂、吃美食、聽團
-	<br>
-	飲料不喝無糖，討厭鹹的芋頭，喜歡蔥薑蒜
-<div id="sentence"  class="bigger">	          ——「求知若飢，虛心若愚。」<i class="icon-emo-grin"></i></div>
+	<div class="all">
+	<div class="me">
+			<div class="left" id="#a">
+				<p>	
+					<img src="images/me.jpg" class="me_frame" id="circle" width="221px" height="262px">
+				</p>
+			</div>		
+		
+		<div class="right">
+			<p id="name" class="small"><br><br>廖庭萱	▕	  Lala Liao</p>
+			<br>
+		2001.11.18	—	
+		From Tainan
+		<br>
+		興趣:音樂、吃美食
+		<br>
+		飲料不喝無糖，討厭鹹的芋頭，喜歡蔥薑蒜，擼貓技能Max。
 
-
-<!-- 長條圖 -->
-<blockquote>
-	<div>
-	<h1 id="a" class="spotlight" data-spotlight="Skill">Skill</h1>
+			<div id="sentence"  class="bigger">
+				<br>           ——「求知若飢，虛心若愚。」
+			</div>	
+		</div>
 	</div>
-					Java
+<!-- <hr> -->
+	
+<!-- 長條圖 -->
+	<div class="skill">
+		<div>
+		<h1 id="b" class="spotlight" data-spotlight="Skill">Skill</h1>
+		</div>
+				<font class="skillfont">	Java </font>
                     <div class="graph">
                         	<strong class="bar" style="width: 80%;"><span>80%</span></strong>
 					</div>    
@@ -77,69 +86,125 @@
 					 
 					 PowerDirector
                      <div class="graph">
-						<strong class="bar" style="width: 77%;"><span>77%</span></strong>
+						<strong class="bar" style="width: 67%;"><span>67%</span></strong>
 					</div>
 
 					Music/Sing/Saxophone
 					<div class="graph">
 						<strong class="bar" style="width: 70%;"><span>70%</span></strong>
 					</div>
-				
-</blockquote>	
+					
+	</div>	
 					 
-<h1 id="b" class="spotlight" data-spotlight="Experience">Experience</h1>
-<h2>社團經歷</h2>
+<h1 id="c" class="spotlight" data-spotlight="Experience">Experience</h1>
+<h2 class="small">Club</h2>
+
+<div class="container">
+<p>
+	<div class="experience_left">
+		<div class="col">
+			<div class="program">
+				<b>樂隊</b>
+			</div>
+			<br>
+				<span class="bigger" id="kmsh">
+					<img src="images/KMSH.jpg"  width="25%" height="25%">
+				</span>
+			</div>
+	</div>
+	
+	<div class="experience_right">
+		<div class="col">
+	高中加入校內樂隊擔任次中音薩克斯風首席，和樂隊一起出沒在校內表演舞台和升旗典禮。
+		</div>
+	</div>
+</p>
+<div class="clearfix"></div>
+</div>
 
 <p>
-	<span class="bigger" id="kmsh">
-		<img src="images/KMSH.jpg"  width="25%" height="25%">高中加入校內樂隊擔任次中音薩克斯風首席，和樂隊一起出沒在校內表演舞台和升旗典禮。
-	</span>
-</p>
-<p>
+	<div class="experience_left">
+	<div class="program">
+		<b>雄屏會</b>
+	</div>
+	<br>
 	<span class="bigger" id="cykp">
-		<img src="images/CYCUKP.jpg"  width="25%" height="25%">受好友邀請協助擔當雄屏會家長/期初社大關主。
+		<img src="images/CYCUKP.jpg"  width="25%" height="25%">
 	</span>
+</div>
+
+<div class="experience_right">
+	擔任雄屏會家長/期初社大關主。
+</div>
 </p>
-<p>
+<!-- <p>
+	<div class="program">
+		<b>系學會攝影股</b>
+	</div>
+	<br>
 	<span class="bigger" id="photoer">
 		<img src="images/photoer.jpg"  width="25%" height="25%">大二加入系學會攝影股擔當股員，在資管之夜、資管新生盃負責協助或是攝影。
 	</span>
 </p>
 
 
-<h2>課程經歷</h2>
-<p>
-	<span class="bigger" id="animals">
-		<img src="images/animals.png"  width="25%" height="25%">管理學服務桃園動物保護園區，自剪影片協助宣傳，並獲得園區人士好評
-	</span>
-</p>
+
+<h2  class="small">Project</h2>
 
 <p>
+	<div class="program">
+		<b>管理學</b>
+	</div>
+	<br>
 	<span class="bigger">
-		<img src="images/wix-1.png"   id="wix1" width="25%" height="25%">
-		<!-- <img src="images/wix-2.png"  id="wix2" width="25%" height="25%"> -->
-		企業概論與三峽禾乃川合作販賣營養餅，自架wix網站及自剪宣傳影片協助宣傳販賣。 
+		<img src="images/animals.png"  id="animals" width="25%" height="25%">
 	</span>
+	服務桃園動物保護園區，自剪影片協助宣傳，並獲得園區人士好評
 </p>
-<h2>專案</h2>
+
 <p>
-	<span class="bigger" id="shopping_site">
-		<img src="images/shopping_site.png"  width="25%" height="25%">網路程式設計課程使用JSP/MySQL做耳機購物網站的後端。
-	</span>
+	<div class="photoframe">
+		<div class="program">
+			<b>企業概論</b>
+	</div>
+<br>
+		<span class="bigger">
+			<img src="images/wix-1.png"   id="wix1" width="25%" height="25%">
+		<img src="images/wix-2.png"  id="wix2" width="25%" height="25%">
+			與三峽禾乃川合作販賣營養餅，自架wix網站及自剪宣傳影片協助宣傳販賣。 
+		</span>
+	</div>
 </p>
 
-<h1 id="c" class="spotlight" data-spotlight="My Life">My Life</h1>
+<p>
+	<div class="photoframe">
+		<div class="program">
+			<b>網路程式設計</b>
+		</div>
+<br>
+		<span class="bigger" id="shopping_site">
+			<img src="images/shopping_site.png"  width="25%" height="25%">使用JSP/MySQL負責耳機購物網站的後端。
+		</span>
+	</div>
+</p> -->
+
+<br>
+<br>
 
 
+<!-- <h1 id="c" class="spotlight" data-spotlight="My Life">My Life</h1> -->
+
+</div>
 
 
 
 <footer>
-	<font id="d">Tel:0988609180</font>		Email:lalabear202020@gmail.com
-	<div class="footer">
-
-		Copyright © 2022 廖庭萱 版權所有
-		<div class="social">
+	<div class="footer">				
+		Email:lalabear202020@gmail.com｜
+		Tel:0988609180
+		<br>
+		
+		<div class="social" id="d">
 		
 			<a href="https://www.facebook.com/likebearlala/" target="_blank">
 				<img src="images/facebook.png" alt="facebook"></a>
@@ -152,6 +217,9 @@
 
 			<a href="https://github.com/likebearlala/" target="_blank">
 				<img src="images/github_black.png" height="50px" width="50px" alt="github"></a>
+				<br>
+				
+				Copyright © 2022 廖庭萱 版權所有
 		</div>
 	</div>
 </footer>

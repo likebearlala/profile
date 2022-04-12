@@ -6,12 +6,12 @@
 	font-size: 30px;
 }
 
- 
+
 
  /* 長條圖 */
  .graph { 
                     position: relative; 
-                     width: 500px; 
+                     width: 50%; 
                      border: 1px solid #b8bb9a; 
                     padding: 2px; 
                      margin-bottom: .5em;     
@@ -45,24 +45,45 @@
 
   
 
-
+                /* 右側導覽列 */
 
             #menu {
               position: fixed;
               right: 0;
               top: 50%;
-              width: 8em;
+              width: 7em;
               margin-top: -2.5em;
+              height: 50%;
             }
             ul {
               list-style-type: none;
               margin: 0;
               padding: 0;
-              width: 200px;
-              background-color: #f1f1f1;
-              
+              width: 7em;
+              height: 50%;
+              font-size: 14px;
+              /* background-color: #f1f1f1; */
+              /* border: 1px solid #555; */
+              /* background: hsla(80, 90%, 40%, 0.7);
+              border-radius: 1.5em 0.5em 0.5em 1.5em; */
             }
-            
+            li{
+              text-align: center;
+              border-bottom: 1px solid #555;
+              /* border: solid hsla(80, 90%, 40%, 0.5); */
+              padding: 0.5em 0.5em 0.5em -0.5em;
+              box-shadow: 0 1px 3px black;
+              border-radius: 1.5em 0.5em 0.5em 1.5em;
+              background: hsla(80, 90%, 40%, 0.7);
+              opacity: 0.9;
+
+            }
+            li:last-child{
+              border-bottom: none;
+            }
+            /* li a.active {
+              background-color: #04aa6d;
+            } */
             li a {
               /* display: block;
               width:  9em;
@@ -71,15 +92,161 @@
               color: #000;
               padding: 8px 16px;
               text-decoration: none;
+              
             }
             li a:hover {
               background-color: #555;
               color: white;
+              border-radius: 1.5em 0.5em 0.5em 1.5em;
             }
 
 
-.footer{
-            position: relative;
+            /* 自我介紹版面 */
+             .me{
+              display: flex;
+              background-color: #e2c2b3;
+              width: 90%;
+               /* border: 1px solid #403234;  */
+               padding: 0px;
+              margin: auto;
+              text-align: left;
+              padding-bottom: 0px;
+              margin-bottom: 0px;
+            }  
+            .left{
+              flex: none;
+              width: 40%;
+              text-align: center;
+            }
+            .right{
+              flex: none;
+              width: 60%;
+            }
+
+            /* header {
+              padding: 0.2%;
+              text-align: left;
+              background: rgb(86, 73, 44);
+              color: white;
+            } */
+            /* .me_frame{
+              background-color: #555;
+              width: 30%;
+              padding: 20px;
+              margin: 10%;
+              opacity: 0.9;
+              border: #555 20%;
+            } */
+            .me_frame{
+              flex: 30%;
+              /* background-color: #86ced7; */
+              padding:10%
+            }
+
+
+            /* skill版面 */
+            /* .skill{
+              display: block;
+              background-color: #e2c2b3;
+              width: 0%;
+              /* border: 1px solid #403234; */
+              /* padding: 0px;
+              margin: 0px;
+              overflow: auto; */
+              /* padding-top: 0px;
+              margin-top: 0px; */
+            /* }  */
+
+            .skill{
+              display: block;
+              margin: auto;
+              width: 100%;
+            }
+            .program{
+              display: inline;
+              background-color: #d76d77;
+              border-radius: 25px;
+              text-align: center;
+            }
+            .skillfont{
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            .small{
+              background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+              background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+              font-size: 24px;
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+            }
+
+            .photoframe{
+              float: left;
+              margin: 2em;
+            }
+
+            .all{
+              display: block;
+              background-color: #e2c2b3;
+              width: 100%;
+              /* border: 1px solid #403234; */
+              padding: 0px;
+              margin: auto;
+              overflow: hidden;
+              box-sizing: border-box;
+            }
+
+            .experience_right{
+              width: 20%;
+              text-align: left;
+              flex:none;
+              float: right;
+              -webkit-column-break-before: always;
+              /* background-color: #ffaf7b; */
+            }
+            .experience_left{
+              width: 80%;
+              text-align: center;
+              flex:none;
+              float: left;
+              -webkit-column-break-before: always;
+              /* background-color: #333; */
+            }
+
+            .container {
+              width:960px;
+              background-color: #3a1c71;
+              margin:auto;
+              columns: 2;
+              column-gap: 0px;
+              }
+              
+              .col {
+              width:100%;
+              height:100%;
+              margin:0px;
+              background-color : #555;
+              float: left;
+              } */
+              
+              /* .col img{
+              width:100%;
+               }
+               
+              .clearfix{
+              clear:both;
+              }
+              
+ */
+
+
+
+
+ .footer{
+            /* position: relative;
             top: 60px;
-            width: 450px;
+            width: 450px; */
+             padding: 20px;
+            text-align: center;
+            background: #ddd;
 }

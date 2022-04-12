@@ -2,11 +2,25 @@
  #sentence{
 	animation: blink 1s infinite;
 	font-weight: bold;
-	color: gray;
+	/* color: gray; */
 	border: rgba(255, 192, 203, 0.7);
 	text-shadow: 6px 6px 5px rgba(192,192,192,0.6);
+  background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+  background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
 	font-size: 24px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
+
+/* #sentence{
+  background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+  background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+ } */
+
 @keyframes blink{
  0% {opacity: 0}
  50% {opacity: 1}
