@@ -3,7 +3,7 @@
 	font-weight: bolder;
 	border: rgba(255, 192, 203, 0.7);
 	text-shadow: 6px 6px 5px rgba(192,192,192,0.6);
-	font-size: 30px;
+	font-size: 35px;
 }
 
 header{
@@ -125,12 +125,12 @@ header{
             }  
             .left{
               flex: none;
-              width: 40%;
+              width: 45%;
               text-align: center;
             }
             .right{
               flex: none;
-              width: 60%;
+              width: 55%;
             }
 
             .me_frame{
@@ -193,14 +193,16 @@ header{
         margin: 4em;
         padding: 4em;
         background-color: #FFCDB2;
-        border: 2px solid #9E7296;
+        /* border: 2px solid #9E7296; */
         border-radius: 25px;
       }
       .card{
         margin: auto;
         padding: auto;
-        border: 1px solid #9E7296;
+        border: 1px solid #B5838D;
+        /* background-color: #FFB4A2; */
         border-radius: 25px;
+        border-style:dashed
       }
 
 
