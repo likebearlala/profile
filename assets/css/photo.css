@@ -9,7 +9,7 @@
 .bigger img{
   padding: 10px;
   background-color:#fff;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 a img:hover{
   transform:scale(1.2,1.2);
