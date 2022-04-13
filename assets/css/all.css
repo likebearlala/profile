@@ -20,7 +20,7 @@ header{
  /* 長條圖 */
  .graph { 
                     position: relative; 
-                     width: 50%; 
+                     width: 80%; 
                      border: 1px solid #b8bb9a; 
                     padding: 2px; 
                      margin-bottom: .5em;     
