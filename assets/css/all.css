@@ -6,6 +6,15 @@
 	font-size: 30px;
 }
 
+header{
+    background-color: #000;
+    color: white;
+    text-align: left;
+    margin: 0px;
+    padding: 20px;
+    padding-left: 45%;
+    margin-bottom: 3%;
+}
 
 
  /* 長條圖 */
@@ -112,6 +121,7 @@
               text-align: left;
               padding-bottom: 0px;
               margin-bottom: 0px;
+              border-radius: 25px;
             }  
             .left{
               flex: none;
@@ -123,20 +133,6 @@
               width: 60%;
             }
 
-            /* header {
-              padding: 0.2%;
-              text-align: left;
-              background: rgb(86, 73, 44);
-              color: white;
-            } */
-            /* .me_frame{
-              background-color: #555;
-              width: 30%;
-              padding: 20px;
-              margin: 10%;
-              opacity: 0.9;
-              border: #555 20%;
-            } */
             .me_frame{
               flex: 30%;
               /* background-color: #86ced7; */
@@ -145,22 +141,14 @@
 
 
             /* skill版面 */
-            /* .skill{
-              display: block;
-              background-color: #e2c2b3;
-              width: 0%;
-              /* border: 1px solid #403234; */
-              /* padding: 0px;
-              margin: 0px;
-              overflow: auto; */
-              /* padding-top: 0px;
-              margin-top: 0px; */
-            /* }  */
 
             .skill{
-              display: block;
               margin: auto;
-              width: 100%;
+              width: 90%;
+              /* background-color: #dccbb0; */
+              /* border-radius: 25px; */
+              display: block;
+               /* border: 1px solid #403234;  */
             }
             .program{
               display: inline;
@@ -180,67 +168,47 @@
               color: transparent;
             }
 
-            .photoframe{
-              float: left;
-              margin: 2em;
-            }
-
             .all{
               display: block;
-              background-color: #e2c2b3;
+              /* background-color: #e2c2b3; */
               width: 100%;
               /* border: 1px solid #403234; */
               padding: 0px;
               margin: auto;
               overflow: hidden;
-              box-sizing: border-box;
             }
 
-            .experience_right{
-              width: 20%;
-              text-align: left;
-              flex:none;
-              float: right;
-              -webkit-column-break-before: always;
-              /* background-color: #ffaf7b; */
-            }
-            .experience_left{
-              width: 80%;
-              text-align: center;
-              flex:none;
-              float: left;
-              -webkit-column-break-before: always;
-              /* background-color: #333; */
-            }
-
-            .container {
-              width:960px;
-              background-color: #3a1c71;
-              margin:auto;
-              columns: 2;
-              column-gap: 0px;
-              }
-              
-              .col {
-              width:100%;
-              height:100%;
-              margin:0px;
-              background-color : #555;
-              float: left;
-              } */
-              
-              /* .col img{
-              width:100%;
-               }
-               
-              .clearfix{
-              clear:both;
-              }
-              
- */
+        b::after{
+          content: " ";display: table;clear: both;
+          }
+          
+      /* .section1{
+        margin: 0em;
+        padding: 0em;
+        background-color: #e7cfe4;
+        border: 2px solid #9E7296;
+        border-radius: 25px;
+      } */
+      .section2{
+        margin: 4em;
+        padding: 4em;
+        background-color: #FFCDB2;
+        border: 2px solid #9E7296;
+        border-radius: 25px;
+      }
+      .card{
+        margin: auto;
+        padding: auto;
+        border: 1px solid #9E7296;
+        border-radius: 25px;
+      }
 
 
-
+main::after{
+  content: "";
+  clear: both;
+  display: table;
+}
 
  .footer{
             /* position: relative;
@@ -248,5 +216,6 @@
             width: 450px; */
              padding: 20px;
             text-align: center;
-            background: #ddd;
+            color: whitesmoke;
+            background: #6D6875;
 }
